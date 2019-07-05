@@ -1,29 +1,31 @@
-<section class="sample-app-content">
+
     <h1>Reconstrução de imagens de ultrassom versão 2.0:</h1>
-    <form [formGroup]="form" click="sendPost()">
+    <form>
         <p>
-            <label>Nome:</label>
-            <input type="text" formControlName="nome">
+            <label>Nome:
+            <input class="form-control" type="text" [(ngModel)] = "dados.Nome" name="first">
+            </label>
         </p>
         <p>
             <label>Email:</label>
-            <input type="text" formControlName="email">
+            <input type="text" [(ngModel)] = "dados.email" name="email">
         </p>
         <p>
             <label>Tamanho da Imagem:</label>
-            <input type="text" formControlName="tamanho">
+            <input type="text" [(ngModel)] = "dados.tamanho" name="tamanho">
         </p>
         <p>
             <label>Ganho:</label>
-            <input type="float" formControlName="ganho">
+            <input type="float" [(ngModel)] = "dados.ganho" name="ganho">
         </p>
         <p>
             <label>Caminho da Imagem:</label>
-            <input type="text" formControlName="endereco">
+            <input type="text" [(ngModel)] = "dados.endereco" name="endereco">
         </p>
         <p>
-            <button type="submit" [disabled]="!form.valid">Submit</button>
-            <button click="sendPost()"></button>
+            <!-- <button type="submit" [disabled]="!form.valid" (click)="send">Submit</button> -->
+            <button  type="submit"  (click)="sendPost();">Submit</button>
         </p>
     </form>
-</section>
+
+    {{bla}} {{dados.Nome}} {{urlNova}}
