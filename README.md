@@ -1,6 +1,6 @@
 # DesIntegradosFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Trabalho desenvolvido para a matéria de Desenvolvimento Integrado de Sistemas ministrada pelo professor Paulo Bueno
 
 ## Development server
 
