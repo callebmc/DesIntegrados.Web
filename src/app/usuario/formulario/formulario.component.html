@@ -1,0 +1,29 @@
+<section class="sample-app-content">
+    <h1>Reconstrução de imagens de ultrassom versão 2.0:</h1>
+    <form [formGroup]="form" click="sendPost()">
+        <p>
+            <label>Nome:</label>
+            <input type="text" formControlName="nome">
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="text" formControlName="email">
+        </p>
+        <p>
+            <label>Tamanho da Imagem:</label>
+            <input type="text" formControlName="tamanho">
+        </p>
+        <p>
+            <label>Ganho:</label>
+            <input type="float" formControlName="ganho">
+        </p>
+        <p>
+            <label>Caminho da Imagem:</label>
+            <input type="text" formControlName="endereco">
+        </p>
+        <p>
+            <button type="submit" [disabled]="!form.valid">Submit</button>
+            <button click="sendPost()"></button>
+        </p>
+    </form>
+</section>

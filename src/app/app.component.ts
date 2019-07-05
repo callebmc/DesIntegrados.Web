@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DesIntegradosFront';
+
+  uri = 'https://localhost:5001/';
+
+  chamarPost(){
+    
+  }
 }
